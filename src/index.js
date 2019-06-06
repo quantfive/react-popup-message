@@ -91,7 +91,6 @@ var styles = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: 'center',
-    fontFamily: 'Open Sans',
     zIndex: 9999999,
     whiteSpace: "pre-wrap",
     minWidth: 80,
