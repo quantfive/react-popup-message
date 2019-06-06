@@ -6,7 +6,7 @@
 import React, { Component } from "react";
 
 // NPM Modules
-import { StyleSheet, css } from "aphrodite";
+import { StyleSheet, css } from "aphrodite/no-important";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Fontawesome config
@@ -40,7 +40,7 @@ class Message extends Component {
   render() {
     let { show, error, load, message } = this.props;
     return (
-      <div className={css(styles.popupMessage, !show && styles.hide)}>
+      <div className={css(styles.popupMessage, !show && styles.hide) + ' ' + this.props.messageContainerStyle}>
         {load ? (
           this.props.spinnerIcon
             ? this.props.spinnerIcon
@@ -90,8 +90,12 @@ var styles = StyleSheet.create({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    justifyContent: 'center',
+    fontFamily: 'Open Sans',
     zIndex: 9999999,
-    whiteSpace: "pre-wrap"
+    whiteSpace: "pre-wrap",
+    width: 80,
+    height: 80,
   },
   hide: {
     display: "none"

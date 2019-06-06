@@ -4,7 +4,7 @@ import {
   faCircleNotch,
   faTimes,
   faCheck
-} from "@fortawesome/pro-solid-svg-icons";
+} from "@fortawesome/free-solid-svg-icons";
 
 library.add(
   faCircleNotch,
