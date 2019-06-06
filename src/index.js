@@ -94,8 +94,8 @@ var styles = StyleSheet.create({
     fontFamily: 'Open Sans',
     zIndex: 9999999,
     whiteSpace: "pre-wrap",
-    width: 80,
-    height: 80,
+    minWidth: 80,
+    minHeight: 80,
   },
   hide: {
     display: "none"
